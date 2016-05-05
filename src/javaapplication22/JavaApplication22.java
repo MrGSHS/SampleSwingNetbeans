@@ -7,7 +7,7 @@ package javaapplication22;
 
 import javax.swing.JFrame;
 import javax.swing.JPanel;
-
+//A new comment
 /**
  *
  * @author rgammelgaard
