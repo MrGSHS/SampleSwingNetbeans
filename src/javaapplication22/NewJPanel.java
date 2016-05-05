@@ -16,7 +16,7 @@ import javax.accessibility.AccessibleContext;
  */
 public class NewJPanel extends javax.swing.JPanel {
 
-    private int counter;
+    private int counter, width;
 
 
     /**
@@ -25,6 +25,7 @@ public class NewJPanel extends javax.swing.JPanel {
     public NewJPanel() {
         initComponents();
         counter=0;
+        width = 100;
         jTextField1.setText("Hello");
         jLabel1.setText("My new label");
         //jButton1.addActionListener(new ButtonListener());
@@ -33,7 +34,7 @@ public class NewJPanel extends javax.swing.JPanel {
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g); 
-        g.drawArc(100, 100, 300, 300, 0, 180);
+        g.drawArc(100, 100, width, 300, 0, 180);
     }
 
     @Override
@@ -107,6 +108,8 @@ public class NewJPanel extends javax.swing.JPanel {
         jTextField1.setText("Just pressed the button");
             counter++;
             jLabel1.setText("Pressed the button "+counter+" times.");
+            width+=10;
+            repaint();
     }//GEN-LAST:event_jButton1ActionPerformed
 
 
