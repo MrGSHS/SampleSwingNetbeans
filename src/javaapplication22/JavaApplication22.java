@@ -21,7 +21,7 @@ public class JavaApplication22 {
     
         JFrame f = new JFrame("MyFrame");
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        JPanel p = new NewJPanel();
+        JPanel p = new HitMePanel();
         f.getContentPane().add(p);
         
         f.pack();
